@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ui/*": ["apps/petfinder-ui/*"],
+      "@api/*": ["apps/petfinder-api/*"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
