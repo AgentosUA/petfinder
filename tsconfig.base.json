@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["apps/petfinder-ui/*"],
+      "@ui/*": ["apps/web/*"],
       "@api/*": ["apps/petfinder-api/*"],
     }
   },

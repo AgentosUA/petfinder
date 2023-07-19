@@ -1,7 +1,7 @@
 {
-  "name": "petfinder-ui",
+  "name": "web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/petfinder-ui",
+  "sourceRoot": "apps/web",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,12 +9,12 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/petfinder-ui",
-        "outputPath": "dist/apps/petfinder-ui"
+        "root": "apps/web",
+        "outputPath": "dist/apps/web"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/petfinder-ui"
+          "outputPath": "apps/web"
         },
         "production": {}
       }
@@ -23,16 +23,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "petfinder-ui:build",
+        "buildTarget": "web:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "petfinder-ui:build:development",
+          "buildTarget": "web:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "petfinder-ui:build:production",
+          "buildTarget": "web:build:production",
           "dev": false
         }
       }
@@ -40,14 +40,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "petfinder-ui:build:production"
+        "buildTarget": "web:build:production"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/petfinder-ui/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

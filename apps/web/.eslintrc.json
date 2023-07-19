@@ -12,7 +12,7 @@
       "rules": {
         "@next/next/no-html-link-for-pages": [
           "error",
-          "apps/petfinder-ui/pages"
+          "apps/web/pages"
         ]
       }
     },
