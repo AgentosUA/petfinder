@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["apps/web/*"],
-      "@api/*": ["apps/petfinder-api/*"],
+      "@api/*": ["apps/api/*"],
     }
   },
   "exclude": ["node_modules", "tmp"]

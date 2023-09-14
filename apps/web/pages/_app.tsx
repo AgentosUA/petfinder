@@ -1,18 +1,25 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
-import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+import Head from 'next/head';
+
+import './styles.scss';
+
+import { createContext } from 'react';
+
+export const MobxContext = createContext({});
+
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <title>Petfinder - час знайти тваринку </title>
       </Head>
-      <main className="app">
+
+      <MobxContext.Provider value={0}>
         <Component {...pageProps} />
-      </main>
+      </MobxContext.Provider>
     </>
   );
 }
 
-export default CustomApp;
+export default App;
