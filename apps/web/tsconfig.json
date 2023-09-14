@@ -16,10 +16,6 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@ui/*": ["apps/web/*"],
-      "@api/*": ["apps/api/*"],
-    }
   },
   "include": [
     "**/*.ts",

@@ -1,7 +1,7 @@
 //@ts-check
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
+const withSass = require('next-sass');
 const { withNx } = require('@nrwl/next/plugins/with-nx');
 
 /**
@@ -13,10 +13,14 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false
   },
+
   sassOptions: {
-    includePaths: [path.join(__dirname), 'styles'],
+    fiber: false,
     modules: {
       localsConvention: 'camelCase'
+    },
+    plugins: {
+      autoprefixer: {}
     }
   }
 };

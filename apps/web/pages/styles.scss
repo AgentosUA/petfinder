@@ -1,5 +1,5 @@
-@import url('../styles/global.scss');
+@import '@ui/shared/ui/styles/core.scss';
 
 body {
-  background: #fff;
+  background: $white;
 }
