@@ -3,6 +3,8 @@
   "endOfLine": "auto",
   "singleQuote": true,
   "arrowParens": "avoid",
-  "jsxSingleQuote": true,
-  "trailingComma": "none"
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "rangeEnd": 120
 }

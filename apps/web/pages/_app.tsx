@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 
 import Head from 'next/head';
 
-import './styles.scss';
+import '@ui/shared/ui/styles/global.scss';
 
 import { createContext } from 'react';
 

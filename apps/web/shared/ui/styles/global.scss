@@ -1,0 +1,9 @@
+@import '@ui/shared/ui/styles/core.scss';
+@import '@ui/shared/ui/styles/reset.scss';
+@import '@ui/shared/ui/styles/fonts.scss';
+
+body {
+  background: $white;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
