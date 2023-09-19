@@ -42,14 +42,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["gateway/**/*.ts"]
+        "lintFilePatterns": ["apps/gateway/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "gateway/jest.config.ts",
+        "jestConfig": "apps/gateway/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

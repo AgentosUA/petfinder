@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@api/*": ["apps/api/*"],
+      "@petfinder-project/logger": ["packages/logger/src/index.ts"],
       "@ui/*": ["apps/web/*"]
     }
   },
