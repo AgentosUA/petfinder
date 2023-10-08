@@ -22,10 +22,13 @@
   padding: 10px 15px;
   display: block;
   color: $white;
+  font-size: 16px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   border: 1px solid transparent;
   transition: .3s;
+  background: none;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid $secondary;
