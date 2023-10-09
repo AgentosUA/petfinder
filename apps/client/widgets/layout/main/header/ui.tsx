@@ -1,6 +1,6 @@
 'use client';
 
-import Logo from '@ui/shared/ui/assets/images/logo.png';
+import Logo from '@ui/shared/assets/images/logo.png';
 
 import Image from 'next/image';
 

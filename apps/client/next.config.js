@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-nocheck
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
@@ -21,6 +21,31 @@ const nextConfig = {
     plugins: {
       autoprefixer: {}
     }
+  },
+  /* Fix for css-loader to use camelcase in class names */
+  webpack: (config) => {
+    const rules = config.module.rules
+        .find((rule) => typeof rule.oneOf === 'object').oneOf.filter((rule) => Array.isArray(rule.use));
+    rules.forEach((rule) => {
+        rule.use.forEach((moduleLoader) => {
+            if (
+                moduleLoader.loader !== undefined 
+                && moduleLoader.loader.includes('css-loader') 
+                && typeof moduleLoader.options.modules === 'object'
+            ) {
+                moduleLoader.options = {
+                    ...moduleLoader.options,
+                    modules: {
+                        ...moduleLoader.options.modules,
+                        // This is where we allow camelCase class names
+                        exportLocalsConvention: 'camelCase'
+                    }
+                };
+            }
+        });
+    });
+
+    return config;
   }
 };
 

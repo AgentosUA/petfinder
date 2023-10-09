@@ -1,6 +1,4 @@
 import { makeAutoObservable } from 'mobx';
-import { cookies } from 'next/dist/client/components/headers';
-import { requestAsyncStorage } from 'next/dist/client/components/request-async-storage';
 
 class UserModel {
   public isAuthorized = false;
