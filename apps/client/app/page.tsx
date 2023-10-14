@@ -2,6 +2,8 @@ import { Layout } from '@ui/widgets';
 
 import { Button } from '@ui/shared/ui/atom/button/ui';
 
+import { Input } from '@ui/shared/ui/atom/input';
+
 import styles from './page.module.scss';
 
 function HomePage() {
@@ -20,6 +22,7 @@ function HomePage() {
         <div className={styles.form}>
           <div className={styles.fields}></div>
           <div className={styles.formButtons}>
+            <Input label='test' />
             <Button variant='accent'>Скинути</Button>
             <Button>Скинути</Button>
           </div>
