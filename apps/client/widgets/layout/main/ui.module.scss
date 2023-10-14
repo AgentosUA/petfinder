@@ -1,0 +1,10 @@
+@import '@ui/shared/ui/styles/core.scss';
+
+.main {
+  padding-top: 66px;
+  width: 100%;
+}
+
+.background {
+  background: url('../../../shared/assets/images/background.png') no-repeat center center $primary-lighter;
+}

@@ -2,13 +2,26 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 15px 30px;
   height: 66px;
+  width: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: transparent;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 15px 30px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $primary;
+  max-width: $max-window-width;
 }
 
 .menu {
