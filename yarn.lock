@@ -1262,11 +1262,6 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@effector/next@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@effector/next/-/next-0.3.0.tgz"
-  integrity sha512-e3WuX96SvH9AoGhN1PDraXiaFXnow/ZiNlTtOiLzMcY3TXhhBYXgDZOnS5n2BtUtz4GvC3/mTaYrmtxXUUtnFQ==
-
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz"
@@ -5461,18 +5456,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
-
-effector-react@^22.5.1:
-  version "22.5.4"
-  resolved "https://registry.npmjs.org/effector-react/-/effector-react-22.5.4.tgz"
-  integrity sha512-7HmtfD/vqmqvGnu6jMojmns9cxIW45JPBkGgHrwvbXGpbm0bz2fmVj6PIttv+Bamfmrf9FAy2bZhs+Rwj+3Mxw==
-  dependencies:
-    use-sync-external-store "^1.0.0"
-
-effector@^22.8.1:
-  version "22.8.6"
-  resolved "https://registry.npmjs.org/effector/-/effector-22.8.6.tgz"
-  integrity sha512-Bkg/rlPs7J4dmOFGPLLcL7X0SZeA8WdRnyC2X4tGVo7i6M8oxYwtNOkEUact/zIT/MgqTGm9A8T40dPnr8oXmA==
 
 ejs@^3.1.7:
   version "3.1.9"
@@ -11259,7 +11242,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-use-sync-external-store@^1.0.0, use-sync-external-store@^1.2.0:
+use-sync-external-store@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
