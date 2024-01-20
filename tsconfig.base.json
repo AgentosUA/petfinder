@@ -15,8 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["apps/web/*"],
       "@api/*": ["apps/api/*"],
+      "@petfinder-project/logger": ["packages/logger/src/index.ts"],
+      "@ui/*": ["apps/client/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
